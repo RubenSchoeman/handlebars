@@ -1,0 +1,22 @@
+{
+  "name": "handlebars_training",
+  "version": "1.0.0",
+  "description": "Handlebars training exersize",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubenSchoeman/handlebars.git"
+  },
+  "author": "Ruben Schoeman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubenSchoeman/handlebars/issues"
+  },
+  "homepage": "https://github.com/RubenSchoeman/handlebars#readme",
+  "dependencies": {
+    "handlebars": "^4.0.8"
+  }
+}
