@@ -14,26 +14,30 @@
 <body>
 
     <script id="handlebars-demo" type="text/x-handlebars-template">
-        <div>
-           My name is {{name}}. I am a {{occupation}}.
+        <div class="container">
+            {{#each person}}
+                <div class="col-xs-4">
+                    <div class="heading">
+                        <h1>{{name}}</h1>
+                    </div>
+                    <div class="info">
+                        {{name}} lives in {{city}} and likes {{food}}
+                    </div>
+                    <div class="image">
+                        {{#if image}}
+                            This is the avatar {{{image}}}
+                        {{/if}}
+                    </div>
+                </div>
+            {{/each}}
         </div>
     </script>
 
-    <script id="handlebars-two" type="text/x-handlebars-template">
-        <div>
-           My name is {{name}}. I am a {{occupation}}.
-        </div>
-    </script>
 
-    <div>
-        <h1 id="test"></h1>
-    </div>
+    <div id="test">
 
-    <div>
-        <h1 id="testtwo"></h1>
     </div>
 
 <script src="main.js"></script>
-<script src="maintwo.js"></script>
 </body>
 </html>
